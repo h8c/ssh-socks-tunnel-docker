@@ -3,7 +3,7 @@ SSH SOCKS Tunnel Docker Image
 =============================
 
 
-[![Docker Automated build](https://img.shields.io/docker/automated/nicolasvan/ssh-socks-tunnel)](https://hub.docker.com/repository/docker/nicolasvan/ssh-socks-tunnel)
+[![Docker Automated build](https://img.shields.io/docker/automated/nicolasvan/ssh-socks-tunnel)](https://hub.docker.com/repository/docker/nicolasvan/ssh-socks-tunnel) [![Actions Status](https://github.com/nicolas-van/ssh-sock-tunnel-docker/workflows/Docker%20CI%20Image/badge.svg)](https://github.com/nicolas-van/ssh-sock-tunnel-docker/actions)
 
 This image contains a simple openssh configuration over alpine. The goal is have a straightforward way to setup a simple ssh server in order to create a SOCKS proxy. The purpose is, once again, to defeat those damn enterprise proxies that basically disallow you anything aside connecting to the crappy enterprise website.
 
