@@ -14,7 +14,11 @@ Launch the docker container on your server:
 
     docker run -d -p 443:22 -e "USER_SSH_ALLOWED=*paste your ssh key here*" nicolasvan/ssh-socks-tunnel
 
-In the above example we redirect the 22 port to 443 (HTTPS port) on our host. The reason is that the hellish enterprise proxies we try to work around will always disallow connections to all ports except that HTTPS port. We also add some ssh key(s) to allow a safe connexion to our SSH server.
+In the above example we redirect the 22 port to 443 (HTTPS port) on our host.
+The reason is that the hellish enterprise proxies we try to work around will always disallow connections to all ports except that HTTPS port.
+We also add some ssh key(s) to allow a safe connexion to our SSH server.
+
+As an alternative to redirecting/mapping the port via docker (e.g. for some scenarios like [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) the optional environment variable `SSHD_PORT` can be used.
 
 Then create a SOCKS proxy to test:
 
@@ -22,7 +26,7 @@ Then create a SOCKS proxy to test:
     
 Configure your browser to connect to the `localhost:1234` SOCKS proxy and test that everything works fine. You can check on [What is my ip](http://whatismyipaddress.com/) that it's your server IP which is displayed.
 
-The last thing to do before going to work tomorrow is to install [corkscrew](http://agroman.net/corkscrew/) on your local machine. You can't configure it right now but you may not be able to download it at work, so do it in advance.
+The last thing to do before going to work tomorrow is to install [corkscrew](https://github.com/bryanpkc/corkscrew) on your local machine. You can't configure it right now but you may not be able to download it at work, so do it in advance.
 
 While at work
 -------------
