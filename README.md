@@ -18,7 +18,7 @@ In the above example we redirect the 22 port to 443 (HTTPS port) on our host.
 The reason is that the hellish enterprise proxies we try to work around will always disallow connections to all ports except that HTTPS port.
 We also add some ssh key(s) to allow a safe connexion to our SSH server.
 
-As an alternative to redirecting/mapping the port via docker (e.g. for some scenarios like [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/) the optional environment variable `SSHD_PORT` can be used.
+As an alternative to redirecting/mapping the port via docker the optional environment variable `SSHD_PORT` can be used. (e.g. for some scenarios like [Azure Container Instances](https://azure.microsoft.com/en-us/services/container-instances/))
 
 Then create a SOCKS proxy to test:
 
