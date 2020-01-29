@@ -11,4 +11,4 @@ fi
 echo "State of /home/user/.ssh/authorized_keys :"
 cat /home/user/.ssh/authorized_keys
 
-exec /usr/sbin/sshd -D -e
+exec /usr/sbin/sshd -p "${SSHD_PORT}" -D -e
