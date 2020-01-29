@@ -1,7 +1,5 @@
 
 # SSH SOCKS Tunnel Docker Image
-=============================
-
 
 [![Docker Automated build](https://img.shields.io/docker/automated/nicolasvan/ssh-socks-tunnel)](https://hub.docker.com/repository/docker/nicolasvan/ssh-socks-tunnel) [![Docker Image CI](https://github.com/nicolas-van/ssh-socks-tunnel-docker/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/nicolas-van/ssh-socks-tunnel-docker/actions?query=workflow%3A%22Docker+Image+CI%22)
 
